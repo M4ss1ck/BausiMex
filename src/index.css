@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+h3 {
+  text-align: center;
+  margin-bottom: inherit;
+  margin-top: 1rem;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+figure {
+  text-align: center;
+}
+p {
+  margin: 2rem 5rem;
+}
+@media screen and (max-width: 40em){
+  p {
+    margin: 1rem;
+  }
+}
+.ancho-100 {
+  width: 100%;
+}
+/* .inicio {
+  position: absolute;
+  left: 2em;
+  top: 10em;
+} */
+.logo{
+  min-height: 2rem;
+}
+
+.inicio img {
+  margin-right: 2rem;
+}
+/* @media screen and (max-width: 40em){
+  .inicio {
+    width: auto;
+    text-align: center;
+    min-width: 6rem;
+  }
+} */
+.promo-img {
+  background-image: url('./images/7.jpg');
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  padding-top: 30%;
+  color: aliceblue;
+}
+@media screen and (max-width: 1200px) {
+  .promo-img {
+    background-image: linear-gradient(to right, #434343 0%, black 100%), url('./images/7.jpg');
+    background-size: 200%;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .promo-img {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+  }
+}
+.fondo {
+  background-color: #212529;
+}
+img {
+  text-align: center;
+  max-width: 100%;
+}
+/* PARA EL MARGEN QUE ME RESTA LA BARRA DE NAVEGACION FIJA */
+.primer-elem {
+  margin-top: 4rem;
+  min-height: 80vh;
+}
+.btn-subir {
+  text-align: center;
+  color: white;
+  background-color: #212529;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: fit-content;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.btn-subir a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer {
+  width: 100%;
+  background-color: #212529;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  color: aliceblue;
+}
+.flextoy {
+  padding-right: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

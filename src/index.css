@@ -40,10 +40,11 @@ p {
 } */
 .logo{
   min-height: 2rem;
+  margin-left: 2rem;
 }
 
 .inicio img {
-  margin-right: 2rem;
+  margin-left: 2rem;
 }
 /* @media screen and (max-width: 40em){
   .inicio {

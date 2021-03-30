@@ -4,7 +4,7 @@ import logo from '../../images/bausimex.svg'
 const Footer = () => {
     return (
         <div className="footer">
-            <p>Hecho con <span role="img">&#128151;</span></p>
+            <p>Hecho con <span role="img" aria-label="Heart">&#128151;</span></p>
             <img 
               src={logo}
               alt="Bausimex"

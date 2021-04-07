@@ -7,7 +7,7 @@ const Contacto = () => {
             <figure>
                 <img
                 src={hanna}
-                alt="la shar pei más bella del mundo"
+                alt="la sharpei más bella del mundo"
                 
                 />
                 <figcaption>Antiguos y nuevos dueños de esta belleza</figcaption>

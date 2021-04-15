@@ -11,27 +11,26 @@ import Navegacion from "./components/Navegacion";
 function App() {
   return (
     <Router>
-      <div>
-        <Navegacion />
+      <Navegacion />
 
-        <Switch>
-          <Route path="/contacto">
-            <Contacto />
-          </Route>
-          <Route path="/fab">
-            <Fabricacion />
-          </Route>
-          <Route path="/mon">
-            <Montaje />
-          </Route>
-          <Route path="/dis">
-            <Diseno />
-          </Route>
-          <Route path="/" exact>
-            <Inicio />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/contacto">
+          <Contacto />
+        </Route>
+        <Route path="/fab">
+          <Fabricacion />
+        </Route>
+        <Route path="/mon">
+          <Montaje />
+        </Route>
+        <Route path="/dis">
+          <Diseno />
+        </Route>
+        <Route path="/" exact>
+          <Inicio />
+        </Route>
+      </Switch>
+
       <Footer />
     </Router>
   );

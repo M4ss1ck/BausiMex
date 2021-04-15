@@ -126,3 +126,22 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
+.tarjeta {
+  min-width: 18rem;
+  max-width: 30%;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+@media screen and (max-width: 980px) {
+  .tarjeta {
+    min-width: 15rem;
+    max-width: 50%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 720px) {
+  .tarjeta {
+    max-width: 80%;
+    align-items: center;
+  }
+}

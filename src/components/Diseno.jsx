@@ -18,7 +18,7 @@ const Diseno = () => {
             <div >
                 <h2>Las líneas que trabajamos son:</h2>
                 <CardDeck >
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '25rem' }} className="tarjeta">
                         <Card.Img variant="top" src={dis1} />
                         <Card.Body>
                         <Card.Title>Nombre del primer diseño</Card.Title>
@@ -31,7 +31,7 @@ const Diseno = () => {
                         <small className="text-muted">La letra pequeña (precio o fecha)</small>
                         </Card.Footer>
                     </Card>
-                    <Card style={{ width: '18rem' }}>
+                    <Card className="tarjeta">
                         <Card.Img variant="top" src={dis2} />
                         <Card.Body>
                         <Card.Title>Otro diseño de calidad superior</Card.Title>
@@ -45,13 +45,27 @@ const Diseno = () => {
                         <small className="text-muted">La letra pequeña (precio o fecha)</small>
                         </Card.Footer>
                     </Card>
-                    <Card style={{ width: '18rem' }}>
+                    <Card className="tarjeta">
                         <Card.Img variant="top" src={dis3} />
                         <Card.Body>
                         <Card.Title>Diseño número 3</Card.Title>
                         <Card.Text>
                             Aquí algo de información adicional. Puede ser mucho texto o solamente
                             dos o tres palabras, es muy probable que nadie lo lea de todas formas.
+                        </Card.Text>
+                        </Card.Body>
+                        <Card.Footer>
+                        <small className="text-muted">La letra pequeña (precio o fecha)</small>
+                        </Card.Footer>
+                    </Card>
+                    <Card className="tarjeta">
+                        <Card.Img variant="top" src={dis1} />
+                        <Card.Body>
+                        <Card.Title>Un cuarto diseño</Card.Title>
+                        <Card.Text>
+                            Aquí algo de información adicional. Puede ser mucho texto o solamente
+                            dos o tres palabras, es muy probable que nadie lo lea de todas formas.
+                            Estoy reciclando la primera imagen porque soy muy vago
                         </Card.Text>
                         </Card.Body>
                         <Card.Footer>

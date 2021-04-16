@@ -127,16 +127,14 @@ img {
   align-items: center;
 }
 .tarjeta {
-  min-width: 18rem;
-  max-width: 30%;
+  max-width: 25%;
   margin-top: 1rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (max-width: 980px) {
   .tarjeta {
     min-width: 15rem;
     max-width: 50%;
-    justify-content: space-between;
   }
 }
 @media screen and (max-width: 720px) {

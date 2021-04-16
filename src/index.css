@@ -131,10 +131,16 @@ img {
   margin-top: 1rem;
   justify-content: center;
 }
+.tarjeta2 {
+  min-width: 25rem;
+  max-width: 25%;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
 @media screen and (max-width: 980px) {
   .tarjeta {
     min-width: 15rem;
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 @media screen and (max-width: 720px) {

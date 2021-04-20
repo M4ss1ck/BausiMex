@@ -3,6 +3,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
+import ModalImage from "react-modal-image";
 
 import ejemplo from '../images/fab/ejemplo.svg'
 const Fabricacion = () => {
@@ -15,7 +16,13 @@ const Fabricacion = () => {
                 <h2>Tecnologías que utilizamos:</h2>
                 <CardDeck >
                     <Card className="tarjeta2">
-                        <Card.Img variant="top" src={ejemplo} />
+                        {/* <Card.Img variant="top" src={ejemplo} /> */}
+                        <ModalImage 
+                            small={ejemplo}
+                            large={ejemplo}
+                            alt="Trozadora"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Trozadora</Card.Title>
                         <Card.Text>
@@ -27,7 +34,12 @@ const Fabricacion = () => {
                         </Card.Footer>
                     </Card>
                     <Card className="tarjeta2">
-                        <Card.Img variant="top" src={ejemplo} />
+                        <ModalImage 
+                            small={ejemplo}
+                            large={ejemplo}
+                            alt="Taladros"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Taladros</Card.Title>
                         <Card.Text>
@@ -40,7 +52,12 @@ const Fabricacion = () => {
                         </Card.Footer>
                     </Card>
                     <Card className="tarjeta2">
-                        <Card.Img variant="top" src={ejemplo} />
+                        <ModalImage 
+                            small={ejemplo}
+                            large={ejemplo}
+                            alt="Fresadoras"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Fresadoras</Card.Title>
                         <Card.Text>
@@ -53,7 +70,12 @@ const Fabricacion = () => {
                         </Card.Footer>
                     </Card>
                     <Card className="tarjeta2">
-                        <Card.Img variant="top" src={ejemplo} />
+                        <ModalImage 
+                            small={ejemplo}
+                            large={ejemplo}
+                            alt="Software"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Software</Card.Title>
                         <Card.Text>
@@ -67,7 +89,12 @@ const Fabricacion = () => {
                         </Card.Footer>
                     </Card>
                     <Card className="tarjeta2">
-                        <Card.Img variant="top" src={ejemplo} />
+                        <ModalImage 
+                            small={ejemplo}
+                            large={ejemplo}
+                            alt="Certificaciones"
+                            imageBackgroundColor="null"
+                        />    
                         <Card.Body>
                         <Card.Title>Certificaciones</Card.Title>
                         <Card.Text>

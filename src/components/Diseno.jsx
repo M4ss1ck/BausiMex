@@ -4,6 +4,8 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Button from 'react-bootstrap/Button'
 
+import ModalImage from "react-modal-image";
+
 import dis1 from '../images/dis/diseño1.svg'
 import dis2 from '../images/dis/diseño2.svg'
 import dis3 from '../images/dis/diseño3.svg'
@@ -19,7 +21,12 @@ const Diseno = () => {
                 <h2>Las líneas que trabajamos son:</h2>
                 <CardDeck >
                     <Card style={{ width: '25rem' }} className="tarjeta">
-                        <Card.Img variant="top" src={dis1} />
+                        <ModalImage 
+                            small={dis1}
+                            large={dis1}
+                            alt="ejemplo"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Nombre del primer diseño</Card.Title>
                         <Card.Text>
@@ -32,7 +39,12 @@ const Diseno = () => {
                         </Card.Footer>
                     </Card>
                     <Card className="tarjeta">
-                        <Card.Img variant="top" src={dis2} />
+                        <ModalImage 
+                            small={dis2}
+                            large={dis2}
+                            alt="ejemplo"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Otro diseño de calidad superior</Card.Title>
                         <Card.Text>
@@ -46,7 +58,12 @@ const Diseno = () => {
                         </Card.Footer>
                     </Card>
                     <Card className="tarjeta">
-                        <Card.Img variant="top" src={dis3} />
+                        <ModalImage 
+                            small={dis3}
+                            large={dis3}
+                            alt="ejemplo"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Diseño número 3</Card.Title>
                         <Card.Text>
@@ -59,7 +76,12 @@ const Diseno = () => {
                         </Card.Footer>
                     </Card>
                     <Card className="tarjeta">
-                        <Card.Img variant="top" src={dis1} />
+                        <ModalImage 
+                            small={dis1}
+                            large={dis1}
+                            alt="ejemplo"
+                            imageBackgroundColor="null"
+                        />
                         <Card.Body>
                         <Card.Title>Un cuarto diseño</Card.Title>
                         <Card.Text>

@@ -10,13 +10,16 @@ import muestra4 from '../images/mon/muestra4.svg'
 import muestra5 from '../images/mon/muestra5.svg'
 
 const images = [
-    muestra1,
-    muestra2, 
-    muestra3, 
-    muestra4, 
-    muestra5 
+    {src: muestra1,
+    alt: "Muestra 1"
+  },
+    {src: muestra2}, 
+    {src: muestra3}, 
+    {src: muestra4}, 
+    {src: muestra5} 
     
 ];
+
 
 const galeria = {
   marginBottom: '2rem',
@@ -39,7 +42,7 @@ export default class LightBox extends Component {
      
       render() {
         const { photoIndex, isOpen } = this.state;
-     
+        
         return (
           <div>
             <div style={galeria}>
@@ -47,8 +50,8 @@ export default class LightBox extends Component {
                 <figure style={figura} type="button" onClick={() => this.setState({ isOpen: true, photoIndex: index })}>
                 <img 
                   style={foto}
-                  src={image}
-                  alt=""
+                  src={image.src}
+                  alt= {image.alt? image.alt : ""}
                   width="250px"
                 />
               </figure>))}
@@ -57,9 +60,9 @@ export default class LightBox extends Component {
      
             {isOpen && (
               <Lightbox
-                mainSrc={images[photoIndex]}
-                nextSrc={images[(photoIndex + 1) % images.length]}
-                prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                mainSrc={images[photoIndex].src}
+                nextSrc={images[(photoIndex + 1) % images.length].src}
+                prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
                 onCloseRequest={() => this.setState({ isOpen: false })}
                 onMovePrevRequest={() =>
                   this.setState({
@@ -71,6 +74,8 @@ export default class LightBox extends Component {
                     photoIndex: (photoIndex + 1) % images.length,
                   })
                 }
+                imageCaption={images[photoIndex].alt}
+                
               />
             )}
           </div>

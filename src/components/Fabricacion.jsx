@@ -1,11 +1,52 @@
 import React from 'react'
 
-import Card from 'react-bootstrap/Card'
-import CardDeck from 'react-bootstrap/CardDeck'
-
-import ModalImage from "react-modal-image";
-
 import ejemplo from '../images/fab/ejemplo.svg'
+import Tarjetas from '../utils/Tarjetas';
+
+const cards = [
+    {
+        src: ejemplo,
+        srcbig: ejemplo,
+        class: "tarjeta2",
+        alt: "Trozadora",
+        text: "Descripción muy motivadora",
+        footer: "La letra pequeña (precio o fecha)"
+    },
+    {
+        src: ejemplo,
+        srcbig: ejemplo,
+        class: "tarjeta2",
+        alt: "Taladros",
+        text: "Otra descripción muy motivadora",
+        footer: "La letra pequeña (precio o fecha)"
+    },
+    {
+        src: ejemplo,
+        srcbig: ejemplo,
+        class: "tarjeta2",
+        alt: "Fresadora",
+        text: "Aquí algo de información adicional. Puede ser mucho texto o solamente dos o tres palabras, es muy probable que nadie lo lea de todas formas.",
+        footer: "La letra pequeña (precio o fecha)"
+    },
+    {
+        src: ejemplo,
+        srcbig: ejemplo,
+        class: "tarjeta2",
+        alt: "Software",
+        text: "Aquí algo de información adicional. Puede ser mucho texto o solamente dos o tres palabras, es muy probable que nadie lo lea de todas formas. Estoy reciclando la misma imagen porque soy muy vago",
+        footer: "La letra pequeña (precio o fecha)"
+    },
+    {
+        src: ejemplo,
+        srcbig: ejemplo,
+        class: "tarjeta2",
+        alt: "Certificaciones",
+        text: "Descripción muy motivadora",
+        footer: "La letra pequeña (precio o fecha)"
+    }
+]
+
+
 const Fabricacion = () => {
     return (
         <div className="container">
@@ -14,101 +55,10 @@ const Fabricacion = () => {
             </div>
             <div >
                 <h2>Tecnologías que utilizamos:</h2>
-                <CardDeck >
-                    <Card className="tarjeta2">
-                        {/* <Card.Img variant="top" src={ejemplo} /> */}
-                        <ModalImage 
-                            small={ejemplo}
-                            large={ejemplo}
-                            alt="Trozadora"
-                            imageBackgroundColor="null"
-                        />
-                        <Card.Body>
-                        <Card.Title>Trozadora</Card.Title>
-                        <Card.Text>
-                            Descripción muy motivadora
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">La letra pequeña (precio o fecha)</small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="tarjeta2">
-                        <ModalImage 
-                            small={ejemplo}
-                            large={ejemplo}
-                            alt="Taladros"
-                            imageBackgroundColor="null"
-                        />
-                        <Card.Body>
-                        <Card.Title>Taladros</Card.Title>
-                        <Card.Text>
-                            Otra descripción muy motivadora
-                        </Card.Text>
-                        
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">La letra pequeña (precio o fecha)</small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="tarjeta2">
-                        <ModalImage 
-                            small={ejemplo}
-                            large={ejemplo}
-                            alt="Fresadoras"
-                            imageBackgroundColor="null"
-                        />
-                        <Card.Body>
-                        <Card.Title>Fresadoras</Card.Title>
-                        <Card.Text>
-                            Aquí algo de información adicional. Puede ser mucho texto o solamente
-                            dos o tres palabras, es muy probable que nadie lo lea de todas formas.
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">La letra pequeña (precio o fecha)</small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="tarjeta2">
-                        <ModalImage 
-                            small={ejemplo}
-                            large={ejemplo}
-                            alt="Software"
-                            imageBackgroundColor="null"
-                        />
-                        <Card.Body>
-                        <Card.Title>Software</Card.Title>
-                        <Card.Text>
-                            Aquí algo de información adicional. Puede ser mucho texto o solamente
-                            dos o tres palabras, es muy probable que nadie lo lea de todas formas.
-                            Estoy reciclando la misma imagen porque soy muy vago
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">La letra pequeña (precio o fecha)</small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="tarjeta2">
-                        <ModalImage 
-                            small={ejemplo}
-                            large={ejemplo}
-                            alt="Certificaciones"
-                            imageBackgroundColor="null"
-                        />    
-                        <Card.Body>
-                        <Card.Title>Certificaciones</Card.Title>
-                        <Card.Text>
-                            Aquí algo de información adicional. Puede ser mucho texto o solamente
-                            dos o tres palabras, es muy probable que nadie lo lea de todas formas.
-                            Estoy reciclando la primera imagen porque soy muy vago
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">La letra pequeña (precio o fecha)</small>
-                        </Card.Footer>
-                    </Card>
-                </CardDeck>
+                
+                <Tarjetas lista = {cards}/>
             </div>
+            
         </div>
     )
 }

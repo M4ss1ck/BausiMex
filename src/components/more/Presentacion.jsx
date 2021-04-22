@@ -22,7 +22,7 @@ const Presentacion = () => {
     return (
         <div className="promo-img">
             <div style = {estilo} >
-                <div style ={{width: '50%', marginLeft: 'auto', marginRight: 'auto' }} >
+                <div className = "frasePortada"   >
                     <img
                         src = {logo}
                         alt = "Logo de la empresa"

@@ -59,7 +59,7 @@ figure {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 30%;
   color: aliceblue;
 }
@@ -168,18 +168,19 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+  max-width: 80%;
 }
 blockquote:before {
   color: #ccc;
   content: open-quote;
-  font-size: 8em;
+  font-size: 10em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 blockquote p {
   display: inline;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 .cita {
   display: flex;
@@ -189,4 +190,23 @@ blockquote p {
 }
 .carrusel {
   background-color: #212529;
+}
+.tarjetas {
+  width: 80%;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.indivCard {
+  margin-left: 4%;
+  margin-right: 4%;
+  max-width: 25%;
+}
+.indivCard:nth-child(2n) {
+  margin-left: auto;
+  margin-right: auto;
+}
+.indivCard:nth-child(2n-1) {
+  margin-left: auto;
+  margin-right: auto;
 }

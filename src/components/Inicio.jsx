@@ -1,10 +1,14 @@
 import React from 'react'
 import Presentacion from './more/Presentacion'
-import tropical from '../images/travelpalmtreesymbol.svg'
-import edificio from '../images/buildng.svg'
 import Plx from 'react-plx'
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
 
 import useWindowDimensions from '../hooks/useWindowDimension'
+
+import fab from '../images/fab/ejemplo.svg'
+import dis from '../images/dis/diseño1.svg'
+import mon from '../images/mon/muestra1.svg'
 
 const Inicio = () => {
 
@@ -22,6 +26,7 @@ const Inicio = () => {
             },
           ],
         },
+        
         // {
         //     start: 300,
         //     end: 500,
@@ -58,33 +63,41 @@ const Inicio = () => {
             parallaxData={ parallaxData } // your parallax effects, see beneath
             >
           
-              <Presentacion id="top"/>
+              <Presentacion id="top" />
 
           </Plx>
-              <h1 >Página principal </h1>
-              <br/>
-              <p>Algo de texto</p>
-              <figure>
-                  <img
-                  src={tropical}
-                  alt="playa y palmeras"
-                  width="300"
-                  />
-                  <figcaption>Una imagen para relajarse</figcaption>
-              </figure>
-              <p>Opiniones de algunos usuarios (Todas muy favorables)</p>
-              <p>Alguna tabla, formulario o algo así (o nada de eso)</p>
-              <figure>
-                  <img
-                  src={edificio}
-                  alt="edificio"
-                  width="500"
-                  />
-                  <figcaption>Otra imagen. Esta vez un edificio</figcaption>
-              </figure>
-              <div className="btn-subir">
-                <a href="#top">Ir al inicio</a>
-              </div>
+
+          <div className="cita"  >
+            <blockquote  ><p>Somos una empresa especializada en el diseño, fabricación y montaje de cancelaría de Aluminio y Vidrio, con amplia experiencia en el sector gracias a la capacitación de nuestros asociados. Nuestra dedicación y compromiso con el cliente nos posiciona como la opción evidente si se busca calidad y tiempos competitivos en la terminación de cualquier obra.</p></blockquote>
+          </div>
+          <hr />
+          <div className="w-100 text-center" style = {{minHeight: '50vh'}} >
+
+            <CardDeck className="w-100 tarjetas" >
+
+              <Card className = "indivCard" >
+                <a href="/dis"><Card.Img variant = "top" src= {dis} /></a>
+                <a href="/dis" className = "btn btn-outline-dark"><Card.Title>Diseño</Card.Title></a>
+              </Card>
+
+              <Card className = "indivCard">
+                <a href="/fab"><Card.Img variant = "top" src= {fab} /></a>
+                <a href="/fab" className = "btn btn-outline-dark"><Card.Title>Fabricación</Card.Title></a>
+              </Card>
+
+              <Card className = "indivCard">
+                <a href="/mon"><Card.Img variant = "top" src={mon}/></a>
+                <a href="/mon" className = "btn btn-outline-dark"><Card.Title>Montaje</Card.Title></a>
+              </Card>
+
+            </CardDeck>
+
+          </div>
+
+          <div className="btn-subir">
+            <a href="#top">Ir al inicio</a>
+          </div>
+
         </div>
         
     )

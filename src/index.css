@@ -1,10 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 h1 {
   text-align: center;
@@ -38,11 +34,25 @@ figure {
   left: 2em;
   top: 10em;
 } */
+.navbar {
+  border-bottom: 0.3rem solid #002e4080;
+}
+.nav-link {
+  background-color: #ffffff20;
+  color: #002e40;
+  font-weight: bold;
+  min-width: 15%;
+}
 .logo {
-  min-height: 2rem;
+  min-height: 3rem;
   margin-left: 2rem;
 }
-
+@media screen and (max-width: 500px) {
+  .logo {
+    min-height: 2rem;
+    margin-left: 0;
+  }
+}
 .inicio img {
   margin-left: 2rem;
 }
@@ -54,27 +64,27 @@ figure {
   }
 } */
 .promo-img {
-  background-image: url("./images/7.jpg");
+  background-image: url("./images/fondo.jpg");
   background-size: 100% auto;
+  background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
   /* text-align: center; */
-  padding-top: 30%;
-  color: aliceblue;
+  padding-top: 6rem;
+  color: #002e40;
 }
 @media screen and (max-width: 1200px) {
   .promo-img {
-    background-image: url("./images/7.jpg");
+    background-image: url("./images/fondo.jpg");
     background-size: 200%;
-    background-position: center;
+    background-position: bottom;
   }
 }
 @media screen and (max-width: 720px) {
   .promo-img {
-    background-image: url("./images/puerta.jpg");
+    background-image: url("./images/fondo.jpg");
     background-size: 120%;
-    color: black;
   }
 }
 .fondo {
@@ -121,10 +131,11 @@ img {
   color: aliceblue;
 }
 .flextoy {
-  padding-right: 4rem;
+  /* padding-right: 4rem; */
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  height: 2rem;
 }
 .tarjeta {
   max-width: 25%;
@@ -163,15 +174,16 @@ img {
 }
 /* cita */
 blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  background: #ffffff75;
+  border-left: 10px solid #002e40;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-  max-width: 80%;
+  max-width: 40%;
+  text-align: end;
 }
 blockquote:before {
-  color: #ccc;
+  color: #002e40;
   content: open-quote;
   font-size: 10em;
   line-height: 0.1em;
@@ -182,11 +194,24 @@ blockquote p {
   display: inline;
   font-size: 1.5em;
 }
+@media screen and (max-width: 1200px) {
+  blockquote {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 720px) {
+  blockquote {
+    max-width: 80%;
+  }
+  blockquote p {
+    font-size: 1.2em;
+  }
+}
 .cita {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin-right: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .carrusel {
   background-color: #212529;
@@ -223,5 +248,40 @@ blockquote p {
 @media screen and (max-width: 575px) {
   .frasePortada {
     width: 80%;
+  }
+}
+.btn-cover {
+  color: #002e40;
+  background-color: #ffffff70;
+  border-radius: 10px 10px 0 0;
+  margin-top: 1rem;
+  font-size: 150%;
+  padding: 0 5%;
+}
+.btn-group-cover {
+  background-color: #002e4060;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.eslogan {
+  margin-right: auto;
+  margin-left: 3rem;
+  text-align: left;
+  color: rgba(0, 46, 64, 255);
+  font-size: 150%;
+}
+@media screen and (max-width: 500px) {
+  .btn-cover {
+    font-size: 100%;
+  }
+  blockquote p {
+    font-size: 1em;
+  }
+  .eslogan {
+    font-size: 1em;
+    margin-left: 1rem;
+  }
+  .promo-img {
+    padding-top: 4rem;
   }
 }

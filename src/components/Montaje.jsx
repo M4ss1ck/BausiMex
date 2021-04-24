@@ -9,6 +9,7 @@ import muestra3 from '../images/mon/muestra3.svg'
 import muestra4 from '../images/mon/muestra4.svg'
 import muestra5 from '../images/mon/muestra5.svg'
 
+
 const images = [
     {src: muestra1,
     alt: "Muestra 1",

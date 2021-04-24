@@ -67,9 +67,7 @@ const Inicio = () => {
 
           </Plx>
 
-          <div className="cita"  >
-            <blockquote  ><p>Somos una empresa especializada en el diseño, fabricación y montaje de cancelaría de Aluminio y Vidrio, con amplia experiencia en el sector gracias a la capacitación de nuestros asociados. Nuestra dedicación y compromiso con el cliente nos posiciona como la opción evidente si se busca calidad y tiempos competitivos en la terminación de cualquier obra.</p></blockquote>
-          </div>
+          
           <hr />
           <div className="w-100 text-center" style = {{minHeight: '50vh'}} >
 

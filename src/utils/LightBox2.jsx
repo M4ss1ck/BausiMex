@@ -3,25 +3,19 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
 const LightBox2 = props => {
-    const [imageState, setImageState] = useState({
-        images: [
-            {src: muestra1,
-            alt: "Muestra 1"
-          },
-            {src: muestra2}, 
-            {src: muestra3}, 
-            {src: muestra4}, 
-            {src: muestra5} 
-            
-        ]
+    const [indexState, setIndexState] = useState({
+      photoIndex: 0,
+      isOpen: false
     }
     )
+
+    const { photoIndex, isOpen } = setindexState(indexState);
 
     return (
         <div>
             <div style={galeria}>
-              {imageState.map((image, index) => (
-                <figure style={figura} type="button" onClick={() => this.setState({ isOpen: true, photoIndex: index })}>
+              {this.props.lista.map((image, index) => (
+                <figure style={figura} type="button" onClick={() => this.setIndexState({ isOpen: true, photoIndex: index })}>
                 <img 
                   style={foto}
                   src={image.src}
@@ -34,17 +28,17 @@ const LightBox2 = props => {
      
             {isOpen && (
               <Lightbox
-                mainSrc={images[photoIndex].src}
-                nextSrc={images[(photoIndex + 1) % images.length].src}
-                prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
-                onCloseRequest={() => this.setState({ isOpen: false })}
+                mainSrc={this.props.lista[photoIndex].src}
+                nextSrc={this.props.lista[(photoIndex + 1) % images.length].src}
+                prevSrc={this.props.lista[(photoIndex + images.length - 1) % images.length].src}
+                onCloseRequest={() => this.setIndexState({ isOpen: false })}
                 onMovePrevRequest={() =>
-                  this.setState({
+                  this.setIndexState({
                     photoIndex: (photoIndex + images.length - 1) % images.length,
                   })
                 }
                 onMoveNextRequest={() =>
-                  this.setState({
+                  this.setIndexState({
                     photoIndex: (photoIndex + 1) % images.length,
                   })
                 }

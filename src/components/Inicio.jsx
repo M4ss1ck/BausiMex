@@ -102,9 +102,9 @@ const Inicio = () => {
           </div>
           
 
-          <div className="btn-subir">
+          {/* <div className="btn-subir">
             <a href="#top">Ir al inicio</a>
-          </div>
+          </div> */}
 
         </div>
         

@@ -11,7 +11,7 @@ const Footer = () => {
               
               height="50"
               />
-            <h3>&copy; 2021</h3>
+            <h3 style = {{color: "#002e40"}} >&copy; 2021</h3>
         </div>
     )
 }

@@ -1,14 +1,10 @@
 import React from 'react'
 import Presentacion from './more/Presentacion'
 import Plx from 'react-plx'
-import Card from 'react-bootstrap/Card'
-import CardDeck from 'react-bootstrap/CardDeck'
 
 import useWindowDimensions from '../hooks/useWindowDimension'
 
-import fab from '../images/fab/ejemplo.svg'
-import dis from '../images/dis/diseño1.svg'
-import mon from '../images/mon/muestra1.svg'
+
 
 const Inicio = () => {
 
@@ -67,30 +63,44 @@ const Inicio = () => {
 
           </Plx>
 
-          
-          <hr />
-          <div className="w-100 text-center" style = {{minHeight: '50vh'}} >
+          <div className="page-2">
+            <div className="d-flex justify-content-around tarjetas">
+              
+              <div className="indivCard">
+                <a href="/dis">
+                  <h1 className="btn btn-cover2">Diseño</h1>
+                </a>
+                <div className="card-1">
+                <div className="fondo-blanco">
+                    <p className="text-center"  >Con nuestros diseñadores e ingenieros, adaptamos las líneas de cancelaría al concepto del inmueble, y garantizamos la calidad de nuestro servicio utilizando materiales de excelencia, proveídos por las reconocidas empresas de Cuprum y Extrusiones Metálicas</p>
+                  </div>
+                </div>
+              </div>
 
-            <CardDeck className="w-100 tarjetas" >
+              <div className="indivCard">
+                <a href="/fab">
+                  <h1 className="btn btn-cover2">Fabricación</h1>
+                </a>
+                <div className="card-2">
+                <div className="fondo-blanco">
+                    <p className="text-center"  >Fabricamos la cancelaría de Aluminio y Vidrio empleando tecnología de avanzada que garantiza la estética y funcionalidad de cada cancel elaborado</p>
+                  </div>
+                </div>
+              </div>
 
-              <Card className = "indivCard" >
-                <a href="/dis"><Card.Img variant = "top" src= {dis} /></a>
-                <a href="/dis" className = "btn btn-outline-dark"><Card.Title>Diseño</Card.Title></a>
-              </Card>
-
-              <Card className = "indivCard">
-                <a href="/fab"><Card.Img variant = "top" src= {fab} /></a>
-                <a href="/fab" className = "btn btn-outline-dark"><Card.Title>Fabricación</Card.Title></a>
-              </Card>
-
-              <Card className = "indivCard">
-                <a href="/mon"><Card.Img variant = "top" src={mon}/></a>
-                <a href="/mon" className = "btn btn-outline-dark"><Card.Title>Montaje</Card.Title></a>
-              </Card>
-
-            </CardDeck>
-
+              <div className="indivCard">
+                <a href="/mon">
+                  <h1 className="btn btn-cover2" >Montaje</h1>
+                </a>
+                <div className="card-3">
+                  <div className="fondo-blanco">
+                    <p className="text-center"  >Garantizamos la estética y técnica de nuestro servicio de montaje ya que poseemos la capacidad para montajes de alto riesgo y empleamos materiales de gama premium para la realización de anclajes y sellos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
 
           <div className="btn-subir">
             <a href="#top">Ir al inicio</a>

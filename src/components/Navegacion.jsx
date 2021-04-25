@@ -12,7 +12,7 @@ const Navegacion = () => {
 
     return (
         <div >
-            <Navbar collapseOnSelect fixed="top" expand="lg" bg="transparent"  style={{color: "#002e40"}}>
+            <Navbar collapseOnSelect fixed="top" expand="lg"   style={{color: "#002e40", backgroundColor: "#ffffffd0"}}>
             <Navbar.Brand href="/">
               <img 
                 src={logo}

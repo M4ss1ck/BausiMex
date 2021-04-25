@@ -11,9 +11,12 @@ const Presentacion = () => {
     }
     
     
+    const altura = {
+        height: "calc(100vh - 8rem)"
+    }
 
     return (
-        <div className="promo-img">
+        <div className="promo-img" style = {altura} >
             <div style = {estilo} >
                 <div className = "w-100"   >
                     

@@ -20,6 +20,9 @@ const Navegacion = () => {
                 height='4rem'
                 className="d-inline-block align-top logo"
                 />
+
+                <p className="logo" > La excelencia en Aluminio </p>
+                
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" >

@@ -4,7 +4,41 @@ import React from 'react'
 import dis1 from '../images/dis/diseño1.svg'
 import dis2 from '../images/dis/diseño2.svg'
 import dis3 from '../images/dis/diseño3.svg'
-import Tarjetas from '../utils/Tarjetas';
+import Slick from '../utils/Slick';
+
+import fot1 from '../images/7.jpg'
+import fot2 from '../images/fondo.jpg'
+import fot3 from '../images/puerta.jpg'
+import fot4 from '../images/dis/fondoDiseño.jpg'
+import fot5 from '../images/hanna.png'
+import fot6 from '../images/fab/fondoFab.jpg'
+
+const ventanas = [
+    {
+        src: fot1,
+        alt: ""
+    },
+    {
+        src: fot2,
+        alt: ""
+    },
+    {
+        src: fot3,
+        alt: ""
+    },
+    {
+        src: fot4,
+        alt: ""
+    },
+    {
+        src: fot5,
+        alt: ""
+    },
+    {
+        src: fot6,
+        alt: ""
+    }
+]
 
 const cards = [
     {
@@ -38,21 +72,77 @@ const cards = [
         alt: "Un cuarto diseño",
         text: "Aquí algo de información adicional. Puede ser mucho texto o solamente dos o tres palabras, es muy probable que nadie lo lea de todas formas. Estoy reciclando la primera imagen porque soy muy vago",
         footer: "La letra pequeña (precio o fecha)"
+    },
+    {
+        src: dis1,
+        srcbig: dis1,
+        class: "tarjeta",
+        alt: "Un cuarto diseño",
+        text: "Aquí algo de información adicional. Puede ser mucho texto o solamente dos o tres palabras, es muy probable que nadie lo lea de todas formas. Estoy reciclando la primera imagen porque soy muy vago",
+        footer: "La letra pequeña (precio o fecha)"
+    },
+    {
+        src: dis1,
+        srcbig: dis1,
+        class: "tarjeta",
+        alt: "Un cuarto diseño",
+        text: "Aquí algo de información adicional. Puede ser mucho texto o solamente dos o tres palabras, es muy probable que nadie lo lea de todas formas. Estoy reciclando la primera imagen porque soy muy vago",
+        footer: "La letra pequeña (precio o fecha)"
+    },
+    {
+        src: dis1,
+        srcbig: dis1,
+        class: "tarjeta",
+        alt: "Un cuarto diseño",
+        text: "Aquí algo de información adicional. Puede ser mucho texto o solamente dos o tres palabras, es muy probable que nadie lo lea de todas formas. Estoy reciclando la primera imagen porque soy muy vago",
+        footer: "La letra pequeña (precio o fecha)"
     }
 ]
 
+ const estilo = {
+     width: "100%",
+     backgroundColor: "#002e4070",
+     color: "white",
+     paddingLeft: "1rem",
+     paddingTop: "0.5rem",
+     paddingBottom: "0.5rem"
+ }       
+
 const Diseno = () => {
     return (
-        <div className="container">
-            <div className="primer-elem">
-                <h1>Diseño de interiores adaptando las líneas de cancelaría al concepto del inmueble</h1>
-                <p>(Aquí va una buena imagen de fondo)</p>
+        <div className="container" style = {{paddingTop: "6rem"}} >
+            <h1>Diseños</h1>
+
+            <h2 style={estilo} >Ventanas</h2>
+            <div className="container"  style = {{paddingBottom: "4rem"}} >
+                <Slick images = {ventanas} />
             </div>
-            <div >
-                <h2>Las líneas que trabajamos son:</h2>
-                <Tarjetas lista = {cards}/>
-                
+
+            <h2 style={estilo} >Puertas</h2>
+            <div className = "container"  style = {{paddingBottom: "4rem"}} >
+                <Slick images = {ventanas} />
             </div>
+
+            <h2 style={estilo} >Canceles</h2>
+            <div className = "container"  style = {{paddingBottom: "4rem"}} >
+                <Slick images = {cards} />
+            </div>
+
+            <h2 style={estilo} >Barandales</h2>
+            <div className = "container"  style = {{paddingBottom: "4rem"}} >
+                <Slick images = {cards} />
+            </div>
+
+            <h2 style={estilo} >Muro Cortina</h2>
+            <div className = "container"  style = {{paddingBottom: "4rem"}} >
+                <Slick images = {cards} />
+            </div>
+
+            <h2 style={estilo} >Louvers</h2>
+            <div className = "container"  style = {{paddingBottom: "4rem"}} >
+                <Slick images = {cards} />
+            </div>
+            
         </div>
     )
 }

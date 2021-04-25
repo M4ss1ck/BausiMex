@@ -205,17 +205,22 @@ blockquote p {
 }
 @media screen and (max-width: 1200px) {
   blockquote {
-    max-width: 60%;
+    max-width: 70%;
+
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 720px) {
   blockquote {
     max-width: 80%;
+
+    margin-top: 1rem;
   }
   blockquote p {
     font-size: 1.2em;
   }
 }
+
 .cita {
   display: flex;
   margin-right: 1rem;
@@ -235,6 +240,8 @@ blockquote p {
   background-color: #002e4060;
   border-radius: 30px;
   margin: 2rem;
+
+  margin-top: 0;
 }
 @media screen and (max-width: 720px) {
   .tarjetas {
@@ -295,7 +302,7 @@ blockquote p {
   border-radius: 10px 10px 0 0;
 
   font-size: 150%;
-  padding: 10%;
+  padding: 5%;
   width: 100%;
   margin-bottom: 0;
 
@@ -303,7 +310,15 @@ blockquote p {
 }
 .btn-cover2:hover {
   color: white;
-  background-color: #002e40;
+  /* background-color: #002e40; */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(0, 46, 64, 0.2),
+    rgba(0, 46, 64, 0.4),
+    rgba(0, 46, 64, 0.2),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 .btn-group-cover {
@@ -331,6 +346,11 @@ blockquote p {
   }
   .promo-img {
     padding-top: 4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  blockquote p {
+    font-size: 0.8em;
   }
 }
 .card-1 {

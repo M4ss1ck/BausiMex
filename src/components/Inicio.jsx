@@ -63,6 +63,8 @@ const Inicio = () => {
 
           </Plx>
 
+          <br />
+          
           <div className="page-2">
             <div className="d-flex justify-content-around tarjetas">
               

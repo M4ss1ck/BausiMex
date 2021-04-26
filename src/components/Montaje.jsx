@@ -2,6 +2,7 @@ import React from 'react'
 
 import Carrusel from '../utils/Carrusel'
 import LightBox from '../utils/LightBox'
+import SlickPlus from '../utils/SlickPlus'
 
 import muestra1 from '../images/mon/muestra1.svg'
 import muestra2 from '../images/mon/muestra2.svg'
@@ -26,20 +27,15 @@ const images = [
 const Montaje = () => {
     return (
         <div className="container">
-            <div className="primer-elem">
+            <div className="primer-elem" style = {{height: "100vh"}} >
                 <h1>Servicio de montaje</h1>
             </div>
-            <div className="cita">
+            {/* <div className="cita">
                 <blockquote><p>Garantizamos la estética y técnica de nuestro servicio de montaje</p></blockquote>
-            </div>
-            <h2>Esto es un Carrusel, las imágenes cambian automáticamente y también puede ser controlado por gestos y botones</h2>
-            <Carrusel images= {images} />
-
-            <hr/>
-            <h2>Esto es un lightbox, al hacer clic en una imagen la puedes ver a pantalla completa y desplazarte por las demás</h2>
-            <LightBox  />
-
+            </div> */}
             
+
+            <SlickPlus images = {images}/>
         </div>
     )
 }

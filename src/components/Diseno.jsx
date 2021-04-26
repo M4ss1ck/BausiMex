@@ -4,7 +4,6 @@ import React from 'react'
 import dis1 from '../images/dis/diseño1.svg'
 import dis2 from '../images/dis/diseño2.svg'
 import dis3 from '../images/dis/diseño3.svg'
-import Slick from '../utils/Slick';
 import SlickPlus from '../utils/SlickPlus'
 
 import fot1 from '../images/7.jpg'
@@ -17,27 +16,33 @@ import fot6 from '../images/fab/fondoFab.jpg'
 const ventanas = [
     {
         src: fot1,
-        alt: ""
+        alt: "",
+        id: '1'
     },
     {
         src: fot2,
-        alt: ""
+        alt: "",
+        id: '2'
     },
     {
         src: fot3,
-        alt: ""
+        alt: "",
+        id: '3'
     },
     {
         src: fot4,
-        alt: ""
+        alt: "",
+        id: '4'
     },
     {
         src: fot5,
-        alt: ""
+        alt: "",
+        id: '5'
     },
     {
         src: fot6,
-        alt: ""
+        alt: "",
+        id: '6'
     }
 ]
 
@@ -122,32 +127,23 @@ const Diseno = () => {
             <h1>Diseños</h1>
 
             <h2 style={estilo} >Ventanas</h2>
-            <SlickPlus images = {cards}/>
+            <SlickPlus images = {ventanas}/>
 
             <h2 style={estilo} >Puertas</h2>
-            <div className = "container"  style = {{paddingBottom: "4rem"}} >
-                <Slick images = {ventanas} />
-            </div>
+            <SlickPlus images = {cards}/>
+            
 
             <h2 style={estilo} >Canceles</h2>
-            <div className = "container"  style = {{paddingBottom: "4rem"}} >
-                <Slick images = {cards} />
-            </div>
+            <SlickPlus images = {ventanas}/>
 
             <h2 style={estilo} >Barandales</h2>
-            <div className = "container"  style = {{paddingBottom: "4rem"}} >
-                <Slick images = {cards} />
-            </div>
+            <SlickPlus images = {cards}/>
 
             <h2 style={estilo} >Muro Cortina</h2>
-            <div className = "container"  style = {{paddingBottom: "4rem"}} >
-                <Slick images = {cards} />
-            </div>
+            <SlickPlus images = {ventanas}/>
 
             <h2 style={estilo} >Louvers</h2>
-            <div className = "container"  style = {{paddingBottom: "4rem"}} >
-                <Slick images = {cards} />
-            </div>
+            <SlickPlus images = {cards}/>
             
             
         </div>

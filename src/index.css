@@ -226,7 +226,7 @@ blockquote p {
   margin-right: 1rem;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .carrusel {
   background-color: #212529;
@@ -309,7 +309,7 @@ blockquote p {
   margin-top: 0;
 }
 .btn-cover2:hover {
-  color: white;
+  /* color: white; */
   /* background-color: #002e40; */
   background-image: linear-gradient(
     to right,

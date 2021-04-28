@@ -37,7 +37,6 @@ export default function Slick( props ) {
 
     const [showBig, setShowBig] = useState(false)
 
-    const [diapActual, setDiapActual] = useState()
 
     useEffect(() => {
 
@@ -123,6 +122,8 @@ export default function Slick( props ) {
                 {...settingsMiniaturas}
                 asNavFor={nav1}
                 ref={slider => (setSlider2(slider))}
+                swipeToSlide={true}
+                focusOnSelect={true}
             >
               {
                 props.images.map(
@@ -131,8 +132,8 @@ export default function Slick( props ) {
                       className="slick-slide slick-slide-min" key={e.id} 
                       onClick = {
                         () => {
-                          setShowBig(!showBig)
-                                                    
+                          setShowBig(true)
+
                         }
                       }
                     >

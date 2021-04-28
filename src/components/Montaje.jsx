@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Carrusel from '../utils/Carrusel'
-import LightBox from '../utils/LightBox'
 import SlickPlus from '../utils/SlickPlus'
 
 import muestra1 from '../images/mon/muestra1.svg'
@@ -26,16 +24,18 @@ const images = [
 
 const Montaje = () => {
     return (
-        <div className="container">
-            <div className="primer-elem" style = {{height: "100vh"}} >
+        <div className="container" style = {{paddingTop: "6rem"}}>
+            {/* <div className="primer-elem" style = {{height: "100vh"}} >
                 <h1>Servicio de montaje</h1>
-            </div>
+            </div> */}
             {/* <div className="cita">
                 <blockquote><p>Garantizamos la estética y técnica de nuestro servicio de montaje</p></blockquote>
             </div> */}
             
 
-            <SlickPlus images = {images}/>
+            <div className="container" style = {{paddingTop: "2rem"}}>
+                <SlickPlus images = {images}/>
+            </div>
         </div>
     )
 }

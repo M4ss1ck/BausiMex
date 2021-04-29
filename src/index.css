@@ -212,7 +212,7 @@ blockquote p {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   blockquote {
     max-width: 80%;
 

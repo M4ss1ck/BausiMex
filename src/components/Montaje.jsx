@@ -8,6 +8,18 @@ import muestra3 from '../images/mon/muestra3.svg'
 import muestra4 from '../images/mon/muestra4.svg'
 import muestra5 from '../images/mon/muestra5.svg'
 
+// // import several images
+// function importAll(r) {
+//     let images = {};
+//     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+//     return images;
+// }
+  
+// const urls = importAll(require.context('../images/mon', false, /muestra\d+\.(png|jpe?g|svg)$/));
+
+// console.log(urls)
+
+
 
 const images = [
     {src: muestra1,
@@ -21,6 +33,8 @@ const images = [
     {src: muestra5} 
     
 ];
+
+console.log(images[0])
 
 const Montaje = () => {
     return (

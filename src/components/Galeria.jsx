@@ -121,7 +121,7 @@ const cards = [
      paddingBottom: "0.5rem"
  }       
 
-const Diseno = () => {
+const Galeria = () => {
     return (
         <div className="container" style = {{paddingTop: "6rem"}} >
             <h1>Diseños</h1>
@@ -150,4 +150,4 @@ const Diseno = () => {
     )
 }
 
-export default Diseno
+export default Galeria

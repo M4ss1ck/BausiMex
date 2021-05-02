@@ -8,11 +8,11 @@ import logo from '../images/bausimex.svg';
 
 const Navegacion = () => {
 
-    
+  // fixed="top"
 
     return (
         <div >
-            <Navbar collapseOnSelect fixed="top" expand="lg"   style={{color: "#002e40", backgroundColor: "#ffffffd0"}}>
+            <Navbar collapseOnSelect  expand="lg"   style={{color: "#002e40", backgroundColor: "#ffffffd0"}}>
             <Navbar.Brand href="/">
               <img 
                 src={logo}
@@ -21,7 +21,7 @@ const Navegacion = () => {
                 className="d-inline-block align-top logo"
                 />
 
-                <p className="logo" style={{paddingLeft: "1rem"}}> La excelencia en Aluminio </p>
+                <p className="logo" > La excelencia en Aluminio </p>
                 
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

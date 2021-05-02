@@ -18,8 +18,15 @@ code {
 figure {
   text-align: center;
 }
-p {
-  color: #002e40;
+p,
+h1,
+h2,
+h3 {
+  color: aliceblue;
+}
+h2 {
+  text-align: center;
+  margin-top: 2rem;
 }
 /* p {
   margin: 2rem 5rem;
@@ -131,8 +138,8 @@ img {
 }
 .footer {
   width: 100%;
-  background-color: #002e4020;
-  text-align: center;
+  background-color: #002e40;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -140,6 +147,22 @@ img {
   color: aliceblue;
   border-top: 0.3rem solid #002e4080;
 }
+
+.footer a,
+.footer p {
+  text-align: left;
+  text-decoration: none;
+  color: aliceblue;
+}
+.footer-icon {
+  text-align: right;
+}
+.footer-end {
+  text-align: center;
+  background-color: aliceblue;
+  height: 4rem;
+}
+
 .flextoy {
   padding-right: 4rem;
 
@@ -185,18 +208,18 @@ img {
 }
 /* cita */
 blockquote {
-  background: #ffffff75;
-  border-left: 10px solid #002e40;
+  /* background: #ffffff75;
+  border-left: 10px solid #002e40; */
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-  max-width: 40%;
+  max-width: 20%;
   text-align: end;
 }
 blockquote:before {
-  color: #002e40;
+  color: aliceblue;
   content: open-quote;
-  font-size: 10em;
+  font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
@@ -204,17 +227,19 @@ blockquote:before {
 blockquote p {
   display: inline;
   font-size: 1.5em;
+  color: aliceblue;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media screen and (max-width: 1200px) {
   blockquote {
-    max-width: 70%;
+    max-width: 30%;
 
     margin-top: 0;
   }
 }
 @media screen and (max-width: 900px) {
   blockquote {
-    max-width: 80%;
+    max-width: 40%;
 
     margin-top: 1rem;
   }
@@ -228,7 +253,29 @@ blockquote p {
   margin-right: 1rem;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 3rem;
+  padding-top: 50vh;
+}
+
+.cita-2 {
+  width: 50%;
+  text-align: right;
+  border-left: 10px solid aliceblue;
+  padding-left: 2rem;
+  margin: 4rem;
+}
+.h-50 {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.h-80 {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.redondo {
+  border-radius: 50% 50%;
 }
 .carrusel {
   background-color: #212529;
@@ -356,43 +403,44 @@ blockquote p {
   }
 }
 .card-1 {
-  background-image: url("./images/dis/fondoDiseño.jpg");
-  height: 70vh;
-  background-position: center;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  background-color: #002e4080;
+
+  height: 80vh;
 }
 .card-2 {
-  background-image: url("./images/fab/fondoFab.jpg");
-  height: 70vh;
-  background-position: bottom;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  background-color: #002e4080;
+  margin-top: 20vh;
+  height: 60vh;
 }
 .card-3 {
-  background-image: url("./images/mon/fondoMon.jpg");
-  height: 70vh;
-  background-position: center;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  background-color: #002e4080;
+  margin-top: 40vh;
+  height: 40vh;
 }
-
+.card-1 p,
+.card-2 p,
+.card-3 p {
+  border-right: 10px solid aliceblue;
+  text-align: right;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.page-1 {
+  height: calc(100vh - 6rem);
+  background-image: url("./images/fondo1.jpg");
+  background-size: 100% auto;
+  /* margin-top: 6rem; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
 .page-2 {
   min-height: 100vh;
-  background-image: url("./images/fondo.jpg");
+  background-color: #002e40f0;
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat;
-  box-shadow: 0 0 8px 8px white inset;
+  /* box-shadow: 0 0 8px 8px #002e40 inset; */
 }
 .indivCard p {
   margin-top: auto;
@@ -405,6 +453,6 @@ blockquote p {
 p.logo {
   margin-bottom: 0;
   min-height: auto;
-
+  margin-left: 6rem;
   font-size: 1rem;
 }

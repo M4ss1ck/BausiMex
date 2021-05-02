@@ -14,7 +14,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 const Footer = () => {
     return (
         <div className="footer">
-            <Row>
+            <Row className="footer-row">
                 <Col xs="2" className="footer-icon">
                     <WhatsAppIcon />
                 </Col>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </Col>
             </Row>
 
-            <Row>
+            <Row className="footer-row">
                 <Col className="footer-icon">
                     <EmailIcon />
                 </Col>
@@ -32,7 +32,7 @@ const Footer = () => {
                 </Col>
             </Row>
 
-            <Row>
+            <Row className="footer-row">
                 <Col className="footer-icon">
                     <RoomIcon />
                 </Col>

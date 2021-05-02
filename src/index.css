@@ -139,13 +139,16 @@ img {
 .footer {
   width: 100%;
   background-color: #002e40;
-
+  padding-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
   margin-top: 0;
   color: aliceblue;
   border-top: 0.3rem solid #002e4080;
+}
+.footer-row {
+  margin-bottom: 0.5rem;
 }
 
 .footer a,
@@ -431,8 +434,14 @@ blockquote p {
   background-image: url("./images/fondo1.jpg");
   background-size: 100% auto;
   /* margin-top: 6rem; */
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1200px) {
+  .page-1 {
+    background-size: 200% auto;
+    background-position: top;
+  }
 }
 .page-2 {
   min-height: 100vh;

@@ -21,7 +21,7 @@ const Navegacion = () => {
                 className="d-inline-block align-top logo"
                 />
 
-                <p className="logo" > La excelencia en Aluminio </p>
+                <p className="logo" style={{color: "#002e40"}}> La excelencia en Aluminio </p>
                 
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

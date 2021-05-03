@@ -114,16 +114,17 @@ const cards = [
 
  const estilo = {
      width: "100%",
-     backgroundColor: "#002e4070",
+     backgroundColor: "#112f3e",
      color: "white",
      paddingLeft: "1rem",
      paddingTop: "0.5rem",
-     paddingBottom: "0.5rem"
+     paddingBottom: "0.5rem",
+     textAlign: "left"
  }       
 
 const Diseno = () => {
     return (
-        <div className="container" style = {{paddingTop: "6rem"}} >
+        <div className="page-2" style = {{paddingTop: "2rem"}} >
             <h1>Diseños</h1>
 
             <h2 style={estilo} >Ventanas</h2>

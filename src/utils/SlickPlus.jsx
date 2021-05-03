@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
+import CloseIcon from '@material-ui/icons/Close';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -95,7 +96,6 @@ export default function Slick( props ) {
     };
 
   
-
   return (
     <div className="slide-wrapper">
         <div style = {showBig ? {display: "block"} : {display: "none"}} >
@@ -111,6 +111,11 @@ export default function Slick( props ) {
                               {/* <h2 className="slick-slide-title">{e.alt}</h2> */}
                               <img  className="slick-slide-image" src={e.src} alt={e.alt}/>
                               <label className="slick-slide-label">{e.footer}</label>
+                              <div className="close-btn">
+                                <CloseIcon
+                                onClick={() => {setShowBig(false)}}
+                                style={{color: "white", fontSize: 40, margin: "1rem"}} />
+                              </div>
                           </div>
                       )
                   )

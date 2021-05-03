@@ -12,7 +12,7 @@ const Navegacion = () => {
 
     return (
         <div >
-            <Navbar collapseOnSelect  expand="lg"   style={{color: "#002e40", backgroundColor: "#ffffffd0"}}>
+            <Navbar collapseOnSelect  expand="lg"   style={{color: "#112f3e", backgroundColor: "#ffffffd0"}}>
             <Navbar.Brand href="/">
               <img 
                 src={logo}
@@ -21,7 +21,7 @@ const Navegacion = () => {
                 className="d-inline-block align-top logo"
                 />
 
-                <p className="logo" style={{color: "#002e40"}}> La excelencia en Aluminio </p>
+                <p className="logo" style={{color: "#112f3e"}}> La excelencia en Aluminio </p>
                 
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

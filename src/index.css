@@ -406,17 +406,17 @@ blockquote p {
   }
 }
 .card-1 {
-  background-color: #002e4080;
+  background-color: #112f3e;
 
   height: 80vh;
 }
 .card-2 {
-  background-color: #002e4080;
+  background-color: #112f3e;
   margin-top: 20vh;
   height: 60vh;
 }
 .card-3 {
-  background-color: #002e4080;
+  background-color: #112f3e;
   margin-top: 40vh;
   height: 40vh;
 }
@@ -445,7 +445,7 @@ blockquote p {
 }
 .page-2 {
   min-height: 100vh;
-  background-color: #002e40f0;
+  background-color: #092736;
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat;

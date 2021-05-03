@@ -43,12 +43,12 @@ const Footer = () => {
 
             <div className="footer-end">
                 <a href="/">
-                    <HomeIcon style={{color: "#002e40", fontSize: 40, margin: "1rem"}}/>
+                    <HomeIcon style={{color: "black", fontSize: 40, margin: "1rem"}}/>
                 </a>
-                <FacebookIcon style={{color: "#002e40", fontSize: 40, margin: "1rem"}}/>
-                <LinkedInIcon style={{color: "#002e40", fontSize: 40, margin: "1rem"}}/>
-                <TwitterIcon style={{color: "#002e40", fontSize: 40, margin: "1rem"}}/>
-                <InstagramIcon style={{color: "#002e40", fontSize: 40, margin: "1rem"}}/>
+                <FacebookIcon style={{color: "black", fontSize: 40, margin: "1rem"}}/>
+                <LinkedInIcon style={{color: "black", fontSize: 40, margin: "1rem"}}/>
+                <TwitterIcon style={{color: "black", fontSize: 40, margin: "1rem"}}/>
+                <InstagramIcon style={{color: "black", fontSize: 40, margin: "1rem"}}/>
             </div>
         </div>
     )

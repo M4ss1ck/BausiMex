@@ -138,14 +138,14 @@ img {
 }
 .footer {
   width: 100%;
-  background-color: #002e40;
+  background-color: #112f3e;
   padding-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
   margin-top: 0;
   color: aliceblue;
-  border-top: 0.3rem solid #002e4080;
+  border-top: 0.3rem solid #112f3e80;
 }
 .footer-row {
   margin-bottom: 0.5rem;

@@ -367,13 +367,18 @@ blockquote p {
     width: 80%;
   }
 }
-.btn-cover {
-  color: #002e40;
-  background-color: #ffffff70;
-  border-radius: 10px 10px 0 0;
-  margin-top: 1rem;
+.btn-card {
+  color: aliceblue;
+  background-color: transparent;
+
+  margin-bottom: 1rem;
   font-size: 150%;
-  padding: 0 5%;
+}
+.btn-card:hover {
+  text-decoration: none;
+  border: 1px solid aliceblue;
+  color: inherit;
+  border-radius: 10px;
 }
 .btn-cover2 {
   color: #002e40;
@@ -413,7 +418,7 @@ blockquote p {
   font-size: 150%;
 }
 @media screen and (max-width: 500px) {
-  .btn-cover {
+  .btn-card {
     font-size: 100%;
   }
   blockquote p {

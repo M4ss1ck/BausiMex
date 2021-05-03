@@ -53,7 +53,10 @@ const Inicio = () => {
                           height="350rem"
                           width="350rem"
                         />
-                        <h2>Diseño</h2>
+                        <h2><a href="/dis" className="btn-card">Diseño</a></h2>
+                        <div className="card-1">
+                          <p >Con nuestros diseñadores e ingenieros, adaptamos las líneas de cancelaría al concepto del inmueble, y garantizamos la calidad de nuestro servicio utilizando materiales de excelencia, proveídos por las reconocidas empresas de Cuprum y Extrusiones Metálicas</p>
+                        </div>
                       </Col>
                       <Col md>
                         <img
@@ -63,7 +66,10 @@ const Inicio = () => {
                           height="350rem"
                           width="350rem"
                         />
-                        <h2>Fabricación</h2>
+                        <h2><a href="/fab" className="btn-card">Fabricación</a></h2>
+                        <div className="card-2">
+                          <p >Fabricamos la cancelaría de Aluminio y Vidrio empleando tecnología de avanzada que garantiza la estética y funcionalidad de cada cancel elaborado</p>
+                        </div>
                       </Col>
                       <Col md>
                         <img
@@ -73,13 +79,16 @@ const Inicio = () => {
                           height="350rem"
                           width="350rem"
                         />
-                        <h2>Montaje</h2>
+                        <h2><a href="/mon" className="btn-card">Montaje</a></h2>
+                        <div className="card-3" >
+                          <p >Fabricamos la cancelaría de Aluminio y Vidrio empleando tecnología de avanzada que garantiza la estética y funcionalidad de cada cancel elaborado</p>
+                        </div>
                       </Col>
                     </Row>
 
                   </div>
 
-                  <div className="h-80">
+                  {/* <div className="h-80">
                     <Row>
                       <Col sm>
                         <div className="card-1">
@@ -97,7 +106,7 @@ const Inicio = () => {
                       </div>
                       </Col>
                     </Row>
-                  </div>
+                  </div> */}
 
 
                 </div>

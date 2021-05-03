@@ -18,7 +18,7 @@ const Navegacion = () => {
                 <img
                   src={logo}
                   alt='BausiMex'
-                  // height='4rem'
+                  height='60'
                 
                   className="d-inline-block align-top"
                   />
@@ -28,7 +28,7 @@ const Navegacion = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" >
-              <Nav className="mr-auto w-100 flextoy">
+              <Nav className="ml-auto w-100 flextoy">
                 <Nav.Link href='/'><h2>Inicio</h2></Nav.Link>
                 <Nav.Link href='/dis'><h2>Diseño</h2></Nav.Link>
                 

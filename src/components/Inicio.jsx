@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import diseño from '../images/diseño.jpg'
 import fabricacion from '../images/fabricacion.jpg'
 import montaje from '../images/montaje.jpg'
-import marca from '../images/marcaDeAgua.svg'
+import marca from '../images/marca.svg'
 
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 
@@ -34,7 +34,6 @@ const Inicio = () => {
                     id="watermark"
                     
                   />
-                  
                 </div>
               </Col>
               <Col xs = "11"  >

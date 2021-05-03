@@ -505,8 +505,16 @@ blockquote p {
   margin: auto 0.5em;
 }
 #watermark {
-  transform: rotate(270deg);
+  /* transform: rotate(270deg); */
+  position: absolute;
+  top: 10%;
+  /* height: 100%; */
+  width: 100%;
+  overflow: visible;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 .marca-de-agua {
   height: 100%;
+  width: 100%;
 }

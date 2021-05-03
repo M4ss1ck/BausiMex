@@ -305,7 +305,11 @@ blockquote p {
 
 .redondo {
   border-radius: 50% 50%;
-  margin-left: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.redondo {
+  display: flex;
 }
 .carrusel {
   background-color: #212529;

@@ -45,7 +45,7 @@ const Inicio = () => {
                   </div>
                   <div className="h-50 justify-content-around">
                     <Row>
-                      <Col md>
+                      <Col md className="l">
                         <img
                           src={diseño}
                           alt=""

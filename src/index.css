@@ -519,6 +519,11 @@ blockquote p {
   -o-object-fit: fill;
   object-fit: fill;
 }
+@media screen and (max-width: 500px) {
+  #watermark {
+    top: 20%;
+  }
+}
 .marca-de-agua {
   height: 100%;
   width: 100%;

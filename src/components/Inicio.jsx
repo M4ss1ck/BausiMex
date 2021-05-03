@@ -17,7 +17,7 @@ const Inicio = () => {
           <div className="page-1">
             
               <div className="cita"  >
-                <blockquote  ><p>Todo lo que necesitas en cancelaría de Aluminio y Vidrio"</p></blockquote>
+                <blockquote  ><p><span style = {{backgroundColor: "#ffffff20"}} >Todo lo que necesitas en cancelaría de Aluminio y Vidrio"</span></p></blockquote>
               </div>
             
           </div>

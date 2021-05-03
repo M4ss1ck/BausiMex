@@ -54,11 +54,12 @@ h2 {
   min-width: 15%;
 }
 .logo {
-  min-height: 3rem;
+  width: 60%;
   margin-left: 2rem;
 }
 @media screen and (max-width: 500px) {
   .logo {
+    max-width: 30%;
     min-height: 2rem;
     margin-left: 0;
   }
@@ -168,11 +169,25 @@ img {
 
 .flextoy {
   padding-right: 4rem;
-
+  height: 100%;
+  font-size: 200%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 2rem;
+  min-height: 4rem;
+}
+.navbar-expand-lg .navbar-nav {
+  height: 8rem;
+}
+.nav-link {
+  color: #112f3e;
+}
+.flextoy h2 {
+  color: #112f3e;
+  margin-bottom: 0;
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-weight: bold;
 }
 .tarjeta {
   max-width: 25%;
@@ -462,6 +477,6 @@ blockquote p {
 p.logo {
   margin-bottom: 0;
   min-height: auto;
-  margin-left: 6rem;
-  font-size: 1rem;
+  margin-right: 0;
+  font-size: 2rem;
 }

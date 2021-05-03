@@ -88,31 +88,11 @@ const Inicio = () => {
 
                   </div>
 
-                  {/* <div className="h-80">
-                    <Row>
-                      <Col sm>
-                        <div className="card-1">
-                          <p >Con nuestros diseñadores e ingenieros, adaptamos las líneas de cancelaría al concepto del inmueble, y garantizamos la calidad de nuestro servicio utilizando materiales de excelencia, proveídos por las reconocidas empresas de Cuprum y Extrusiones Metálicas</p>
-                        </div>
-                      </Col>
-                      <Col sm>
-                        <div className="card-2">
-                          <p >Fabricamos la cancelaría de Aluminio y Vidrio empleando tecnología de avanzada que garantiza la estética y funcionalidad de cada cancel elaborado</p>
-                        </div>
-                      </Col>
-                      <Col sm>
-                      <div className="card-3">
-                        <p >Fabricamos la cancelaría de Aluminio y Vidrio empleando tecnología de avanzada que garantiza la estética y funcionalidad de cada cancel elaborado</p>
-                      </div>
-                      </Col>
-                    </Row>
-                  </div> */}
-
-
+                  
                 </div>
                   
                     <div className="w-100">
-                      <a href="/galeria" className="btn d-block">
+                      <a href="/galeria" className="btn-card">
                          <h2><PhotoLibraryIcon style={{color: "aliceblue", fontSize: 40, margin: "1rem"}}/>Galería de Muestra</h2>
                       </a>
                     </div>

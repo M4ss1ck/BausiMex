@@ -29,6 +29,7 @@ const Navegacion = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" >
               <Nav className="mr-auto w-100 flextoy">
+                <Nav.Link href='/'><h2>Inicio</h2></Nav.Link>
                 <Nav.Link href='/dis'><h2>Diseño</h2></Nav.Link>
                 
                 <Nav.Link href='/fab'><h2>Fabricación</h2></Nav.Link>

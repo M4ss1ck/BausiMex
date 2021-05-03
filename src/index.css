@@ -187,7 +187,7 @@ img {
   margin-bottom: 0;
   font-size: 2rem;
   margin-left: 2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .tarjeta {
   max-width: 25%;

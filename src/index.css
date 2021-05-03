@@ -177,7 +177,7 @@ img {
   min-height: 4rem;
 }
 .navbar-expand-lg .navbar-nav {
-  height: 8rem;
+  height: 6rem;
 }
 .nav-link {
   color: #112f3e;
@@ -445,7 +445,7 @@ blockquote p {
   padding-bottom: 4rem;
 }
 .page-1 {
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 8rem);
   background-image: url("./images/fondo1.jpg");
   background-size: 100% auto;
   /* margin-top: 6rem; */
@@ -478,5 +478,5 @@ p.logo {
   margin-bottom: 0;
   min-height: auto;
   margin-right: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }

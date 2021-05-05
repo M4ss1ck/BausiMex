@@ -14,7 +14,7 @@ const Inicio = () => {
   
     
     return (
-        <div className="otra-cosa">
+        <div>
           <div className="page-1">
             
               <div className="cita"  >

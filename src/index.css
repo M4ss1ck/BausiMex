@@ -147,7 +147,7 @@ img {
   text-decoration: none;
   color: inherit;
 }
-.footer {
+footer {
   width: 100%;
   background-color: #112f3e;
   padding-top: 1rem;
@@ -162,8 +162,8 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.footer a,
-.footer p {
+footer a,
+footer p {
   text-align: left;
   text-decoration: none;
   color: aliceblue;

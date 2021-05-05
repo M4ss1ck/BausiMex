@@ -490,6 +490,7 @@ img.redondo {
   /* margin-top: 6rem; */
   background-position: top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 @media screen and (max-width: 1200px) {
   .page-1 {

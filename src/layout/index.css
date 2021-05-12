@@ -85,7 +85,7 @@ p.logo {
   }
 } */
 .promo-img {
-  background-image: url("./images/fondo.jpg");
+  background-image: url("../images/fondo.jpg");
   background-size: 100% auto;
   background-position: bottom;
   background-attachment: fixed;
@@ -99,7 +99,7 @@ p.logo {
 }
 @media screen and (max-width: 1200px) {
   .promo-img {
-    background-image: url("./images/fondo.jpg");
+    background-image: url("../images/fondo.jpg");
     background-size: 200%;
     background-position: bottom;
 
@@ -108,7 +108,7 @@ p.logo {
 }
 @media screen and (max-width: 720px) {
   .promo-img {
-    background-image: url("./images/fondo.jpg");
+    background-image: url("../images/fondo.jpg");
     background-size: 120%;
 
     height: 85vh;
@@ -485,7 +485,7 @@ img.redondo {
 }
 .page-1 {
   height: calc(100vh - 8rem);
-  background-image: url("./images/fondo1.jpg");
+  background-image: url("../images/fondo1.jpg");
   background-size: 100% auto;
   /* margin-top: 6rem; */
   background-position: top;

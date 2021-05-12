@@ -122,7 +122,7 @@ const cards = [
      textAlign: "left"
  }       
 
-const Galeria = () => {
+const Gallery = () => {
     return (
         <div className="page-2" style = {{paddingTop: "2rem"}} >
             <h1>Diseños</h1>
@@ -151,4 +151,4 @@ const Galeria = () => {
     )
 }
 
-export default Galeria
+export default Gallery

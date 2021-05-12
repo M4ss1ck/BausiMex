@@ -8,13 +8,16 @@ import montaje from '../images/montaje.jpg'
 import marca from '../images/marca.svg'
 
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import Layout from './Layout'
+
 
 const Inicio = () => {
 
   
     
     return (
-        <div>
+        <Layout>
+          
           <div className="page-1">
             
               <div className="cita"  >
@@ -110,8 +113,8 @@ const Inicio = () => {
           {/* <div className="btn-subir">
             <a href="#top">Ir al inicio</a>
           </div> */}
-
-        </div>
+          
+        </Layout>
         
     )
 }
